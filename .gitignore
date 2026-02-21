@@ -216,3 +216,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### Project Settings
+.env
+config.yaml
