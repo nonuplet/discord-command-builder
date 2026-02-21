@@ -1,9 +1,17 @@
 {
+	"type": "module",
+	"scripts": {
+		"compile": "pnpm tsc",
+		"register": "node --env-file-if-exists=.env dist/main.js --config config.yaml",
+		"start": "pnpm compile && pnpm register"
+	},
 	"dependencies": {
-		"discord.js": "^14.25.1"
+		"discord.js": "^14.25.1",
+		"js-yaml": "^4.1.1"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.4",
+		"@types/js-yaml": "^4.0.9",
 		"@types/node": "^25.3.0",
 		"ts-node": "^10.9.2",
 		"typescript": "^5.9.3"

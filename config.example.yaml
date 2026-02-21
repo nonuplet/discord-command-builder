@@ -1,0 +1,8 @@
+clientId: ""
+guildId: ""
+commands:
+  - name: "ping"
+    description: "Pong!"
+    subcommands:
+      - name: "pong"
+        description: "Pong!"
