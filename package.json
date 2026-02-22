@@ -3,7 +3,8 @@
 	"scripts": {
 		"compile": "pnpm tsc",
 		"register": "node --env-file-if-exists=.env dist/main.js --config config.yaml",
-		"start": "pnpm compile && pnpm register"
+		"start": "pnpm compile && pnpm register",
+		"dev": "node --loader ts-node/esm --env-file-if-exists=.env src/main.ts --config config.yaml"
 	},
 	"dependencies": {
 		"discord.js": "^14.25.1",

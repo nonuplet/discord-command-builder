@@ -11,6 +11,13 @@ export interface CommandConfig {
 	name: string;
 	description: string;
 	subcommands?: SubCommandConfig[];
+	subcommand_groups?: SubCommandGroupConfig[];
+}
+
+export interface SubCommandGroupConfig {
+	name: string;
+	description: string;
+	subcommands: SubCommandConfig[];
 }
 
 export interface SubCommandConfig {
