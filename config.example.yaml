@@ -1,8 +1,15 @@
 clientId: ""
 guildId: ""
+
 commands:
-  - name: "ping"
+  - name: "ping" # /ping
     description: "Pong!"
-    subcommands:
-      - name: "pong"
+    subcommand:
+      - name: "pong" #/ping pong
         description: "Pong!"
+    subcommand_groups:
+      - name: "foo"
+        description: "Foo!"
+        subcommands:
+          - name: "bar" # /ping foo bar
+            description: "Bar!"
